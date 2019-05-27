@@ -1,0 +1,24 @@
+{
+  "name": "paraview",
+  "version": "1.0.0",
+  "description": "Multi-screen image viewer",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seance/paraview.git"
+  },
+  "keywords": [
+    "multi-screen",
+    "image",
+    "viewer",
+    "electron"
+  ],
+  "author": "github/seance",
+  "license": "CC-BY-SA-4.0",
+  "devDependencies": {
+    "electron": "^1.8.8"
+  }
+}

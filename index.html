@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Paraview - Main</title>
+    <style>
+body {
+  background-color: gray;
+  padding: 0;
+  margin: 0;
+}
+#header {
+  display: flex;
+}
+#root {
+  flex: 1;
+}
+#thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+}
+.thumbnail {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: rgba(0,0,0,0.05);
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  padding: 0;
+  margin: 10px;
+}
+.thumbnail:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.thumbnail:active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.thumbnail.selected {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.label {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: rgba(255,255,255,0.9);
+  font-family: sans-serif;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <input id="root" placeholder="Root path" disabled>
+      <button id="select-root">Select...</button>
+    </header>
+    <div id="thumbnails"></div>
+    <script>
+      require('./renderer.js')
+    </script>
+  </body>
+</html>
