@@ -19,6 +19,6 @@
   "author": "github/seance",
   "license": "CC-BY-SA-4.0",
   "devDependencies": {
-    "electron": "^1.8.8"
+    "electron": "^15.5.5"
   }
 }
